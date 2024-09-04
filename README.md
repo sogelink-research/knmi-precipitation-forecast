@@ -46,7 +46,7 @@ Load a .h5 file and get the forecast data in mm/hr and dBZ at a specific locatio
 ```python
 from knmi_precipitation.h5_radar_data import H5RadarData
 
-data = H5RadarData('./RAD_NL25_PCP_FM_202409031130.h5')
+data = H5RadarData('./example_data/RAD_NL25_RAC_FM_202409041355.h5')
 lng, lat = 5.319185, 51.687406
 value_mm_hr = data.get_mm_hr_from_lon_lat('image1', lng, lat)
 ```
@@ -58,6 +58,6 @@ Export the forecast data of image1 from a .h5 file to a GeoTIFF file warped to E
 ```python
 from knmi_precipitation.h5_radar_data import H5RadarData
 
-data = H5RadarData('./RAD_NL25_PCP_FM_202409031130.h5')
-data.export_to_geotiff('image1', './data/RAD_NL25_PCP_FM_202409031130_1.tif')
+radar = H5RadarData('./example_data/RAD_NL25_RAC_FM_202409041355.h5')
+data.export_to_geotiff('image1', './data/RAD_NL25_RAC_FM_202409041355_1.tif')
 ```
