@@ -59,5 +59,5 @@ Export the forecast data of image1 from a .h5 file to a GeoTIFF file warped to E
 from knmi_precipitation.h5_radar_data import H5RadarData
 
 radar = H5RadarData('./example_data/RAD_NL25_RAC_FM_202409041355.h5')
-data.export_to_geotiff('image1', './data/RAD_NL25_RAC_FM_202409041355_1.tif')
+data.export_geotiff('image1', './data/RAD_NL25_RAC_FM_202409041355_1.tif')
 ```
