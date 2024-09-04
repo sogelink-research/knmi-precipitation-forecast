@@ -17,6 +17,10 @@ pip install -r requirements.txt
 pip install -r requirements-dev.txt
 ```
 
+## KNMI API Key
+
+To use the KNMI data platform you need an API key. You can request one [here](https://developer.dataplatform.knmi.nl/)
+
 ## Examples
 
 ### Notebooks
