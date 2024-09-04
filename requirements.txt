@@ -1,0 +1,6 @@
+gdal==3.4.1
+python-dotenv==1.0.1
+h5py==3.11.0
+pyproj==3.6.1
+requests==2.32.3
+pandas==2.2.2
